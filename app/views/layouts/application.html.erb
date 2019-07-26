@@ -9,6 +9,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <p>
+    <%= link_to "Home", root_path%>
+    <%= link_to "Items #{current_cart.count}", card_path %>
+  </p>
   <body>
     <%= yield %>
   </body>
